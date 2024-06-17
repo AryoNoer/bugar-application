@@ -1,3 +1,4 @@
+import 'package:bugarapp/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:bugarapp/widgets/about_card.dart';
 import 'package:bugarapp/widgets/custom_bottom_navigation_bar.dart';
@@ -9,12 +10,15 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFFFE5E7),
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
-            Navigator.pop(context);
+             Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
+        );
           },
         ),
       ),
@@ -25,9 +29,9 @@ class AboutScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                'About Bugar',
+                'Tentang Bugar',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: Colors.pink,
                 ),
@@ -35,12 +39,12 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(height: 10),
               const Text(
                 'Hai Bufas, Aplikasi ini adalah hasil penelitian Kerja Sama Perguruan Tinggi (PKTP) yang dirancang bangun oleh dosen kebidanan Poltekkes Kemenkes Jakarta 3 dan Dosen Untirta yaitu Junengsih, Jehanara, Shentya F, dan Mukhlidah Hanun. Aplikasi ini bermanfaat meningkatkan kebugaran pasca salin, agar setiap ibu nifas dapat melewati masa nifas dengan kondisi sehat, bugar dan bahagia.',
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
               ),
               const SizedBox(height: 20),
               Center(
                 child: Image.asset(
-                  'assets/illustration.png', // Ganti dengan gambar ilustrasi yang sesuai
+                  'assets/images/aboutimage.png', // Ganti dengan gambar ilustrasi yang sesuai
                   height: 200,
                 ),
               ),
@@ -48,8 +52,8 @@ class AboutScreen extends StatelessWidget {
               const Text(
                 'Penyusun',
                 style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
                   color: Colors.pink,
                 ),
               ),

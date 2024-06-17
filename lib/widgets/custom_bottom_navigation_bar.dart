@@ -43,7 +43,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
     return BottomNavigationBar(
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.grid_view),
+          icon: Icon(Icons.home_outlined),
           label: 'Beranda',
         ),
         BottomNavigationBarItem(
@@ -61,8 +61,8 @@ class CustomBottomNavigationBar extends StatelessWidget {
       ],
       selectedItemColor: Colors.pink,
       unselectedItemColor: Colors.grey,
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
       onTap: (index) => _onItemTapped(context, index),
     );
   }

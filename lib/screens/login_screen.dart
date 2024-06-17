@@ -14,14 +14,14 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/your_image.png', // Replace with your actual image asset
+              'assets/images/login1.png', // Replace with your actual image asset
               height: 200,
             ),
             const SizedBox(height: 20),
             const Text(
               'Selamat Datang',
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -29,7 +29,7 @@ class LoginScreen extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30.0),
+                  borderRadius: BorderRadius.circular(14.0),
                 ),
                 labelText: 'Username',
                 hintText: 'Username',
@@ -40,7 +40,7 @@ class LoginScreen extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30.0),
+                  borderRadius: BorderRadius.circular(14.0),
                 ),
                 labelText: 'Kata sandi',
                 hintText: 'Kata sandi',
@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                 // Perform login action
               },
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 15), backgroundColor: Colors.pink,
+                padding: const EdgeInsets.symmetric(horizontal: 120, vertical: 12), backgroundColor: Colors.pink,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
               child: const Text(
                 'Masuk',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 12,
                   color: Colors.white,
                 ),
               ),
@@ -79,6 +79,7 @@ class LoginScreen extends StatelessWidget {
               child: const Text(
                 'Belum Punya Akun? Yuk Registrasi Disini!',
                 style: TextStyle(
+                  fontSize: 12,
                   color: Colors.black,
                   decoration: TextDecoration.underline,
                 ),

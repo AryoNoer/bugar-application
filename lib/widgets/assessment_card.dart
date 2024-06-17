@@ -8,11 +8,13 @@ class AssessmentCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.symmetric(vertical: 15),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: ListTile(
-        leading: Image.asset('assets/yoga.png'),
+        minTileHeight: 123,
+        leading: Image.asset('assets/images/login1.png'),
         title: Text(title),
+        titleTextStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black),
       ),
     );
   }
