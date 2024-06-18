@@ -26,23 +26,39 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/welcome.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Center(
-          child: ElevatedButton(
-            onPressed: () => _showBottomSheet(context),
-            child: const Text('Continue'),
-          ),
+
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/Welcome-Page.png'),
+          fit: BoxFit.cover,
         ),
       ),
-    );
-  }
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center, // Align items vertically
+        children: [
+          const Spacer(), // Pushes the button down
+          Center( // Keep the button horizontally centered
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 10),
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20)),
+                backgroundColor: Colors.white
+              ),
+              onPressed: () => _showBottomSheet(context),
+              child: const Text('Lanjutkan',
+              style: TextStyle(fontSize: 12, color: Colors.pink, fontWeight: FontWeight.normal),
+              ),
+            ),
+          ),
+          const SizedBox(height: 50), // Add some space below the button
+        ],
+      ),
+    ),
+  );
+}
 }

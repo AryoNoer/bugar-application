@@ -14,7 +14,18 @@ class RegistrationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Registrasi'),
-        backgroundColor: Colors.pink,
+        titleTextStyle: const TextStyle(color: Colors.pink, fontSize: 20),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+           Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (context) => const LoginScreen())
+            );
+          },
+        ),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

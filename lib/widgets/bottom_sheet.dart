@@ -24,14 +24,14 @@ class CustomBottomSheet extends StatelessWidget {
             const Text(
               'Selamat Datang di',
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 14,
                 fontWeight: FontWeight.normal,
               ),
             ),
             const Text(
-              'Bugar Pasca Bersalin',
+              'Kualitas Nifas Bugar',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
                 color: Colors.pink,
               ),
@@ -42,13 +42,13 @@ class CustomBottomSheet extends StatelessWidget {
               'pengenalan tanda bahaya nifas, pemenuhan nutrisi, adaptasi fisik ibu nifas '
               'dan menyusui, proses pencapaian peran keibuan, adaptasi menjadi orang tua, '
               'promosi kesehatan untuk perilaku hidup sehat, pencegahan penyakit ...',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 14),
             ),
             const SizedBox(height: 16),
             const Text(
               'Untuk itu bunda, kami harapkan agar melakukan pengisian data dengan benar agar bunda dapat '
               'memperoleh informasi dan rekomendasi selama menjalani peran baru sebagai ibu nifas.',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 14),
             ),
             const SizedBox(height: 16),
             const Text(
@@ -58,16 +58,22 @@ class CustomBottomSheet extends StatelessWidget {
             const SizedBox(height: 8),
             const Text(
               '1. Saya bersedia untuk berpartisipasi secara sukarela tanpa paksaan dan menyatakan bahwa data yang '
-              'saya isi adalah benar dan dapat dipertanggungjawabkan\n'
-              '2. Saya mengerti bahwa data yang saya isi pada Aplikasi BUGAR PASCA BERSALIN ditujukan untuk informasi '
+              'saya isi adalah benar dan dapat dipertanggungjawabkan\n\n'
+              '2. Saya mengerti bahwa data yang saya isi pada Aplikasi Kualitas Nifas Bugar ditujukan untuk informasi '
               'kesehatan bagi saya sendiri dan sebagai kepentingan pengembangan keilmuan (penelitian dsb) dan dijaga '
-              'kerahasiaannya.\n'
+              'kerahasiaannya.\n\n'
               '3. Saya mengerti bahwa data pribadi yang saya masukan dipergunakan untuk mendapatkan gambaran pasca salin.',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 14),
             ),
             const SizedBox(height: 16),
             Center(
                child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 10),
+                  shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)),
+                  backgroundColor: Colors.pink
+              ),
                 onPressed: () {
                   Navigator.pop(context); // Close the bottom sheet
                   Navigator.push(
@@ -75,7 +81,9 @@ class CustomBottomSheet extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const LoginScreen()),
                   ); // Navigate to the login screen
                 },
-                child: const Text('Lanjutkan'),
+                child: const Text('Lanjutkan',
+                style: TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.normal),
+                ),
               ),
             ),
           ],

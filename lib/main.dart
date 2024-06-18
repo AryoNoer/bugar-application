@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // Apply Poppins to all text in the app
         textTheme: GoogleFonts.poppinsTextTheme(),
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.pink, // Set the primary color to pink
         // ... other theme customizations
       ),
       home: const SplashScreenWrapper(),
