@@ -55,7 +55,7 @@ class RegistrationScreen extends StatelessWidget {
                 // Perform registration action
               },
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 120, vertical: 12),
                 backgroundColor: Colors.pink,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0),
@@ -64,12 +64,12 @@ class RegistrationScreen extends StatelessWidget {
               child: const Text(
                 'Daftar',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 14,
                   color: Colors.white,
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             TextButton(
               onPressed: () {
                 Navigator.push(
@@ -80,8 +80,9 @@ class RegistrationScreen extends StatelessWidget {
               child: const Text(
                 'Sudah Akun ? Yuk Masuk !',
                 style: TextStyle(
-                  color: Colors.pink,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  decoration: TextDecoration.underline,
+                  color: Colors.black,
                 ),
               ),
             ),

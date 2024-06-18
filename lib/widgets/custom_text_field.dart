@@ -25,10 +25,15 @@ class CustomTextField extends StatelessWidget {
              // Add border color here
           ),
           labelText: label,
-          labelStyle: const TextStyle(color: Colors.pink, fontSize: 20),
+          labelStyle: const TextStyle(color: Colors.black54, fontSize: 16),
           // Add label color here,
           hintText: hint,
           prefixIcon: Icon(icon),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10.0),
+            borderSide: const BorderSide(color: Colors.pink),
+          ),
+          // Add focused border color her
         ),
       ),
     );

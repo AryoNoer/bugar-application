@@ -9,8 +9,13 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFFE5E7),
+        backgroundColor: Colors.white,
+        title: const Text(
+          'Tentang Kami',
+          style: TextStyle(color: Colors.pink, fontSize: 20),
+        ),
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
@@ -28,14 +33,6 @@ class AboutScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Tentang Bugar',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.pink,
-                ),
-              ),
               const SizedBox(height: 10),
               const Text(
                 'Hai Bufas, Aplikasi ini adalah hasil penelitian Kerja Sama Perguruan Tinggi (PKTP) yang dirancang bangun oleh dosen kebidanan Poltekkes Kemenkes Jakarta 3 dan Dosen Untirta yaitu Junengsih, Jehanara, Shentya F, dan Mukhlidah Hanun. Aplikasi ini bermanfaat meningkatkan kebugaran pasca salin, agar setiap ibu nifas dapat melewati masa nifas dengan kondisi sehat, bugar dan bahagia.',
@@ -60,19 +57,19 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(height: 10),
               const AboutCard(
                 name: 'Junengsih, SST.MKM',
-                imageUrl: 'assets/person1.png',
+                imageUrl: 'assets/images/bitmap.png',
               ),
               const AboutCard(
                 name: 'Jehanara, SST.MKM',
-                imageUrl: 'assets/person2.png',
+                imageUrl: 'assets/images/login1.png',
               ),
               const AboutCard(
                 name: 'Shentya F, SST.MKM',
-                imageUrl: 'assets/person3.png',
+                imageUrl: 'assets/images/login1.png',
               ),
               const AboutCard(
                 name: 'Mukhlidah Hanun, SST.MKM',
-                imageUrl: 'assets/person4.png',
+                imageUrl: 'assets/images/login1.png',
               ),
             ],
           ),

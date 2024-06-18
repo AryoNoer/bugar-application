@@ -15,7 +15,7 @@ class CustomDropdownField extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: DropdownButtonFormField<String>(
         decoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0)),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
           labelText: label,
         ),
         items: items.map((item) {

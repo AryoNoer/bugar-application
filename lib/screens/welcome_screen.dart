@@ -51,7 +51,7 @@ Widget build(BuildContext context) {
               ),
               onPressed: () => _showBottomSheet(context),
               child: const Text('Lanjutkan',
-              style: TextStyle(fontSize: 12, color: Colors.pink, fontWeight: FontWeight.normal),
+              style: TextStyle(fontSize: 14, color: Colors.pink, fontWeight: FontWeight.normal),
               ),
             ),
           ),

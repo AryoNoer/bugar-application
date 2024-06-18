@@ -22,7 +22,7 @@ class CustomCheckboxList extends StatelessWidget {
               return CheckboxListTile(
                 title: Text(item),
                 value: false,
-                onChanged: (value) {},
+                onChanged: (bool? value) {},
               );
             }).toList(),
           ),

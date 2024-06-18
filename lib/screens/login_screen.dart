@@ -34,6 +34,10 @@ class LoginScreen extends StatelessWidget {
                 labelText: 'Username',
                 hintText: 'Username',
                 prefixIcon: const Icon(Icons.person),
+                focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: const BorderSide(color: Colors.pink),
+          ),
               ),
             ),
             const SizedBox(height: 20),
@@ -45,6 +49,10 @@ class LoginScreen extends StatelessWidget {
                 labelText: 'Kata sandi',
                 hintText: 'Kata sandi',
                 prefixIcon: const Icon(Icons.lock),
+                focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: const BorderSide(color: Colors.pink),
+          ),
               ),
               obscureText: true,
             ),
@@ -64,7 +72,7 @@ class LoginScreen extends StatelessWidget {
               child: const Text(
                 'Masuk',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 14,
                   color: Colors.white,
                 ),
               ),
